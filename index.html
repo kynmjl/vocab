@@ -8,14 +8,15 @@
 </head>
 <body>
     <!-- # Zwei Boxen, die mit JavaScript auf unterschiedliche Seiten verlinken -->
-    <div class="box-container">
-        <div class="box" onclick="navigateTo('../VocaSets/set1.html')"> <!-- Box 1 führt zu set1.html -->
-            <p>Set 1</p>
-        </div>
-        <div class="box" onclick="navigateTo('../VocaSets/set2.html')"> <!-- Box 2 führt zu set2.html -->
-            <p>Set 2</p>
-        </div>
+<div class="box-container">
+    <div class="box" onclick="navigateTo('VocaSets/set1.html')"> <!-- Richtiger Pfad für set1.html -->
+        <p>Set 1</p>
     </div>
+    <div class="box" onclick="navigateTo('VocaSets/set2.html')"> <!-- Richtiger Pfad für set2.html -->
+        <p>Set 2</p>
+    </div>
+</div>
+
     <script src="js/script.js"></script> <!-- Verknüpfung mit JavaScript -->
 </body>
 </html>
