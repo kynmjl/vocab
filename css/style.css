@@ -1,1 +1,50 @@
+/* # Allgemeine Stileinstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* # Box-Container-Stil */
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* # Box-Stil */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50; /* Grüne Boxen */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Glatte Farbänderung bei Hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten unter der Box */
+}
+
+/* # Hover-Effekt */
+.box:hover {
+    background-color: #45a049; /* Dunkleres Grün bei Hover */
+}
+
+/* # Anpassung für kleine Bildschirme */
+@media (max-width: 600px) {
+    .box-container {
+        flex-direction: column;
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}
 
